@@ -14,7 +14,7 @@ config = TrainConfig(
         vocab_size=256,
         max_position_embeddings=0,
         n_layers=2,
-        sequence_mixer=dict(
+        sequence_mixer=ModuleConfig(
             name="zoology.mixers.mamba.Mamba",
             kwargs={"d_state": 16}),
         ),

@@ -167,6 +167,13 @@ class Trainer:
                 break
 
             self.scheduler.step()
+        self.save_model("/content/HW_mamba/attn_model")
+    
+    def save_model(self, save_dir: str):
+        """
+           Save the model and tokenizer to the specified directory.
+        """
+        torch.save(self.model.state_dict(), save_dir)
 
 
 def compute_metrics(
