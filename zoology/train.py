@@ -167,7 +167,7 @@ class Trainer:
                 break
 
             self.scheduler.step()
-        self.save_model("/content/HW_mamba/attn_model")
+        self.save_model("/content/HW_mamba/mamba_model")
     
     def save_model(self, save_dir: str):
         """

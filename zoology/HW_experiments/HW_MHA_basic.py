@@ -9,7 +9,7 @@ config = TrainConfig(
         test_configs=[MQARConfig(num_examples=1_000, vocab_size=128, input_seq_len=64, kwargs={"num_kv_pairs": 4})],
     ),
     model=ModelConfig(
-        vocab_size=256,
+        vocab_size=128,
         max_position_embeddings=64,
         sequence_mixer=ModuleConfig(
             name="zoology.mixers.attention.MHA",
