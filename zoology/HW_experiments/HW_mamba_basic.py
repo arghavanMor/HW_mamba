@@ -11,7 +11,7 @@ config = TrainConfig(
 
     model = ModelConfig(
         block_type="MambaBlock",
-        vocab_size=256,
+        vocab_size=128,
         max_position_embeddings=0,
         n_layers=2,
         sequence_mixer=ModuleConfig(
