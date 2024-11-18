@@ -56,6 +56,8 @@ conv_mixer = dict(
 
 
 # attention
+#our experimental results show mixing the attention with a base convultion, improves its performance
+#hybrid attention and BaseConv
 for d_model in [64, 128, 256]:
     attention_mixer = dict(
         name="zoology.mixers.attention.MHA",
